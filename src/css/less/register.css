@@ -1,0 +1,182 @@
+@charset "UTF-8";
+.container {
+  width: 100%;
+}
+.wrapper {
+  width: 990px;
+  margin: 0 auto;
+}
+input,
+select,
+option,
+label {
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+textarea {
+  resize: none;
+}
+/* ---site-nav--- */
+#site-nav {
+  background-color: #f2f2f2;
+}
+#site-nav .sn-container {
+  width: 990px;
+  height: 35px;
+  margin: auto;
+  font-size: 12px;
+  color: #999;
+  line-height: 35px;
+}
+#site-nav .sn-container p a {
+  padding: 0 10px;
+}
+#site-nav .sn-container p > a:nth-child(1) {
+  color: red;
+}
+#site-nav .sn-container a {
+  color: #999;
+}
+#site-nav .sn-container a:hover {
+  color: red;
+}
+#site-nav .sn-container .iconfont {
+  color: red;
+}
+#site-nav .sn-container ul > li {
+  position: relative;
+  float: left;
+  padding: 0 10px;
+}
+#site-nav .sn-container ul > li:hover .mytaobao-grade2 {
+  display: block;
+}
+#site-nav .sn-container ul > li:hover .mytaobao-grade2-support {
+  display: block;
+}
+#site-nav .sn-container ul > li .mytaobao-grade2 {
+  position: absolute;
+  width: 100px;
+  height: 60px;
+  top: 26px;
+  left: 0px;
+  padding-left: 10px;
+  background-color: #fff;
+  display: none;
+}
+#site-nav .sn-container ul > li .mytaobao-grade2-support {
+  position: absolute;
+  width: 150px;
+  top: 26px;
+  left: 0px;
+  padding-left: 10px;
+  background-color: #fff;
+  display: none;
+}
+#site-nav .sn-container ul > li .mytaobao-grade2-support > a {
+  padding: 0 10px;
+}
+#site-nav .sn-container .change-bgcolor:hover {
+  background-color: #fff;
+}
+#head {
+  width: 100%;
+  height: 83px;
+  line-height: 83px;
+  margin-bottom: 100px;
+}
+#head h1 {
+  display: inline-block;
+  height: 67px;
+  vertical-align: middle;
+}
+#head h2 {
+  display: inline-block;
+  margin-left: 6px;
+  font-size: 22px;
+  font-family: "\5FAE\8F6F\96C5\9ED1", "\534E\6587\7EC6\9ED1", "\9ED1\4F53", arial;
+  font-weight: 400;
+}
+#reg-body {
+  width: 510px;
+  margin: 0 auto;
+}
+#reg-body .reg-form {
+  width: 500px;
+  height: 40px;
+  margin-bottom: 25px;
+  padding-left: 10px;
+}
+#reg-body .reg-form .text {
+  width: 80px;
+  height: 40px;
+  line-height: 40px;
+  text-align: right;
+  padding-right: 10px;
+}
+#reg-body .reg-form .input {
+  width: 300px;
+  height: 43px;
+  border: 1px solid #999;
+}
+#reg-body .reg-form .input .pl-list {
+  height: 40px;
+}
+#reg-body .reg-form .input .pl-list select {
+  padding: 0 10px;
+}
+#reg-body .reg-form .input .input-item {
+  height: 40px;
+  padding-left: 10px;
+}
+#reg-body .reg-form .input .input-code {
+  width: 246px;
+}
+#reg-body .reg-form .input button {
+  width: 300px;
+  height: 40px;
+  color: #fff;
+  background: linear-gradient(to right, #FFCC80, #FFA880);
+}
+#reg-body .reg-form .button-bar {
+  border: none;
+}
+#reg-body .reg-form .check-text {
+  font-size: 14px;
+  color: black;
+  border: none;
+}
+#reg-body .reg-form .check-text a {
+  font-size: 14px;
+  color: #f0990c;
+}
+#reg-body .reg-form .change-bar {
+  border: none;
+}
+#reg-body .changetoreg {
+  text-align: right;
+}
+#reg-body .changetoreg a {
+  color: #f8a50b;
+  font-size: 12px;
+}
+#footer {
+  line-height: 30px;
+  width: 990px;
+  margin: 0px auto;
+  padding-top: 10px;
+  color: #999;
+  font-size: 12px;
+}
+#footer .footer-hd p:nth-child(1) {
+  line-height: 30px;
+  border-bottom: 1px solid #6c6c6c;
+  border-top: 1px solid #6c6c6c;
+}
+#footer .footer-hd a {
+  font-size: 12px;
+  color: #6c6c6c;
+  padding: 0 5px;
+}

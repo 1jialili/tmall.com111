@@ -1,0 +1,110 @@
+@charset "utf-8";
+*{
+	margin: 0;
+	padding: 0;
+}
+ul li{
+	list-style: none;
+}
+img{
+	border: 0;
+}
+/* 垂直居中 */
+.small-img{
+	display: flex;
+	align-items:center;
+	justify-content: center;
+}
+.clearfix:before,
+.clearfix:after{
+  display: table;
+  line-height: 0;
+  content: "";
+}
+.magnifier{
+	width: 420px;
+	position: relative;
+	margin-top: 100px;
+	/* margin-left: 100px; */
+}
+.magnifier-container{
+	width: 420px;
+	height:420px;
+	overflow: hidden;
+	position: relative;
+	border: 1px solid #ddd;
+}
+.move-view{
+	width: 100px;
+	height: 100px;
+	position: absolute;
+	background-image: url('../images/move-box.png');
+}
+.images-cover{
+	height: 100%;
+	width: 100%;
+	position: relative;
+}
+.images-cover img{
+	position: absolute;
+	width: 420px;
+	height: 420px;
+}
+.magnifier-assembly{
+	height: 92px;
+	overflow: hidden;
+	position: relative;
+}
+.magnifier-line{
+	position: relative;
+	overflow: hidden;
+	height: 92px;
+}
+.magnifier-line ul{
+	display: block;
+	font-size: 0;
+	width: 100%;
+	position: absolute;
+	left: 0;
+	z-index: 9997;
+}
+.magnifier-line li{
+	float: left;
+	width: 60px;
+	margin-left: 10px;
+	cursor: pointer;
+}
+.small-img{
+	height: 60px;
+	padding: 1px;
+	margin: 5px;
+	overflow: hidden;
+	text-align: center;
+}
+.small-img img{
+	width: 60px;
+	height: 60px;
+	/* max-width: 100%;
+	max-height: 100%; */
+}
+.magnifier-view{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	right: -105%;
+	top: 0;
+	z-index: 9999;
+	background-color: #fff;
+	display: none;
+	overflow: hidden;
+}
+.magnifier-view img{
+	display: block;
+}
+.animation03{
+	transition: all 0.3s ease-in 0.1s;
+	-ms-transition: all 0.3s ease-in 0.1s;
+	-moz-transition: all 0.3s ease-in 0.1s;
+	-webkit-transition: all 0.3s ease-in 0.1s;
+	-o-transition: all 0.3s ease-in 0.1s;
+}

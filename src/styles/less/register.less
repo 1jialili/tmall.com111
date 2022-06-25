@@ -1,0 +1,195 @@
+@charset "UTF-8";
+.container {
+  width: 100%;
+}
+.wrapper {
+  width: 990px;
+  margin: 0 auto;
+}
+input,select,option,label{
+  outline: none;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+textarea {
+  resize: none;
+}
+/* ---site-nav--- */
+#site-nav {
+  background-color: #f2f2f2;
+  .sn-container {
+    width: 990px;
+    height: 35px;
+    margin: auto;
+    font-size: 12px;
+    color: #999;
+    line-height: 35px;
+    p {
+      a {
+        padding: 0 10px;
+      }
+    }
+    p>a:nth-child(1) {
+      color: red;
+    }
+    a {
+      color: #999;
+    }
+    a:hover {
+      color: red;
+    }
+    .iconfont {
+      color: red;
+    }
+    ul > li {
+      position: relative;
+      float: left;
+      padding: 0 10px;
+      // .mytaobao:hover{
+      //   transition: all 0.5s;
+      //   transform:rotateY(180deg)
+      // }
+      &:hover .mytaobao-grade2{
+        display: block;
+      }
+      &:hover .mytaobao-grade2-support{
+        display: block;
+      }
+      .mytaobao-grade2{
+        position: absolute;
+        width: 100px;
+        height: 60px;
+        top: 26px;
+        left:0px;
+        padding-left: 10px;
+        background-color: #fff;
+        display: none;
+      } 
+      .mytaobao-grade2-support{
+        position: absolute;
+        width: 150px;
+        // height: 60px;
+        top: 26px;
+        left:0px;
+        padding-left: 10px;
+        background-color: #fff;
+        display: none;
+        >a{
+          padding: 0 10px;
+        }
+      }           
+    }
+    .change-bgcolor:hover {
+      background-color: #fff;
+    }
+  }
+}
+// 头部
+#head {
+  width: 100%;
+  height: 83px;
+  line-height: 83px;
+  margin-bottom: 100px;
+  // vertical-align: middle;
+  h1 {
+    display: inline-block;
+    height: 67px;
+    vertical-align: middle;
+  }
+  h2 {
+    display: inline-block;
+    margin-left: 6px;
+    font-size: 22px;
+    font-family: "\5FAE\8F6F\96C5\9ED1","\534E\6587\7EC6\9ED1","\9ED1\4F53",arial;
+    font-weight: 400;
+  }
+}
+//注册主体
+#reg-body {
+  width: 510px;
+  margin: 0 auto;
+  .reg-form {
+    width: 500px;
+    height: 40px;
+    margin-bottom: 25px;
+    padding-left: 10px;
+    .text {
+      // display: inline-block;
+      width: 80px;
+      height: 40px;
+      line-height: 40px;
+      text-align: right;
+      padding-right: 10px;
+    }
+    .input {
+      width: 300px;
+      height: 43px;
+      border: 1px solid #999;
+      .pl-list {
+        height: 40px;
+        select {
+          padding: 0 10px;
+        }
+      }
+      .input-item {
+        height: 40px;
+        padding-left: 10px;
+      }
+      .input-code {
+        width: 246px;
+      }
+      button{
+        width: 300px;
+        height: 40px;
+        color: #fff;
+        background: linear-gradient(to right, #FFCC80,#FFA880);;
+      }
+    }
+    .button-bar {
+      border: none;
+    }
+    .check-text {
+      font-size: 14px;
+      color: black;
+      border: none;
+      a {
+        font-size: 14px;
+        color: rgb(240, 153, 12);
+      }
+    }
+    .change-bar {
+      border: none;
+    }
+  }
+  .changetoreg {
+    text-align: right;
+    a {
+      color: rgb(248, 165, 11);
+      font-size: 12px;
+    }
+  }
+}
+
+#footer {
+  line-height: 30px;
+  width: 990px;
+  margin: 0px auto;
+  padding-top: 10px;
+  // background-color: black;
+  color: #999;     
+  font-size: 12px;
+  .footer-hd {
+    p:nth-child(1) {
+      line-height: 30px;
+      border-bottom: 1px solid #6c6c6c;
+      border-top: 1px solid #6c6c6c;
+    }
+    a {
+      font-size: 12px;
+      color: #6c6c6c;
+      padding: 0 5px;
+    }
+  }
+}
+

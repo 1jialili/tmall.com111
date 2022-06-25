@@ -1,0 +1,603 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>详情页</title>
+  <link rel="stylesheet" href="./css/base.css">
+  <link rel="stylesheet" href="./css/less/details.css">
+  <link rel="stylesheet" href="./font_3469884_x21irl5l3ik/iconfont.css">
+  <link rel="stylesheet" href="./css/less/footer.css">
+  <link rel="stylesheet" href="./jQueryMagnifier/css/magnifier.css">
+  <link rel="stylesheet" href="./swiper/swiper-bundle.min.css">
+  <style>
+    html,
+    body {
+      position: relative;
+      height: 100%;
+    }
+
+    body {
+      font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+      font-size: 14px;
+      color: #000;
+      margin: 0;
+      padding: 0;
+    }
+
+    .swiper {
+      width: 100%;
+      height: 100%;
+    }
+
+    .swiper-slide {
+      text-align: center;
+      font-size: 18px;
+      background: #fff;
+
+      /* Center slide text vertically */
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: -webkit-flex;
+      display: flex;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      -webkit-justify-content: center;
+      justify-content: center;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      -webkit-align-items: center;
+      align-items: center;
+    }
+
+    .swiper-slide img {
+      display: block;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+
+    .swiper-pagination-bullet {
+      width: 20px;
+      height: 20px;
+      text-align: center;
+      line-height: 20px;
+      font-size: 12px;
+      color: #000;
+      opacity: 1;
+      background: rgba(0, 0, 0, 0.2);
+    }
+
+    .swiper-pagination-bullet-active {
+      color: #fff;
+      background: #007aff;
+    }
+  </style>
+</head>
+<body>
+  <!-- 顶部图片 -->
+  <div class="topnav-img container">
+    <a href="javascript:void(0)"><img src="./img/details-img/topimg.jpg" alt=""></a>
+  </div>
+  <!-- 头部导航site-nav -->
+  <div id="site-nav" class="container">
+    <div class="sn-container">
+      <p class="fl">
+        <span class="iconfont icon-shouye"></span><a href="./index.html">天猫首页</a>
+      </p>
+      <p class="fl">
+        <em>喵，欢迎来天猫</em>
+        <a href="./login.html" class="sn-login">请登录</a>
+        <a href="./reg.html" class="sn-register">免费注册</a>
+      </p>
+      <ul class="fr">
+        <li class="change-bgcolor">
+          <a href="#">我的淘宝</a>
+          <span class="mytaobao">^</span>
+          <div class="mytaobao-grade2">
+            <a href="#">已买到的宝贝</a><br />
+            <a href="#">已卖出的宝贝</a>
+          </div>
+        </li>
+        <li class="sn-cart">
+          <span class="iconfont icon-gouwuchekong"></span
+          ><a href="./shopcar.html">购物车</a>
+        </li>
+        <li class="change-bgcolor">
+          <a href="#">收藏夹</a>
+          <div class="mytaobao-grade2">
+            <a href="#">收藏的宝贝</a><br />
+            <a href="#">收藏出的宝贝</a>
+          </div>
+        </li>
+        <li>
+          <span class="iconfont icon-shouji"></span><a href="#">手机版</a>
+        </li>
+        <li><a href="#">淘宝网</a></li>
+        <li><a href="#">网页无障碍</a></li>
+        <li class="change-bgcolor">
+          <a href="#">商家支持</a>
+          <div class="mytaobao-grade2-support">
+            <span>商家:</span><br />
+            <a href="#">商家中心</a>
+            <a href="#">商家中心</a><br />
+            <a href="#">商家中心</a>
+            <a href="#">商家中心</a><br />
+            <a href="#">商家中心</a>
+            <a href="#">商家中心</a><br />
+            <a href="#">商家中心</a>
+            <a href="#">商家中心</a><br />
+            <span>111</span>
+            <span>商家：</span><br />
+            <a href="#">商家中心</a><br />
+            <a href="#">商家中心</a>
+          </div>
+        </li>
+        <li><a href="#">商家中心</a></li>
+      </ul>
+    </div>
+  </div>
+  <!-- 搜索部分 -->
+    <div id="search" class="wrapper">
+      <div class="tianmao-logo fl">
+        <a href="#"><img src="./img/details-img/tianmaologo.png" alt=""></a>
+      </div>
+      <div class="address fl">
+        <div>杭州<span style="display:block;float:right">^</span></div>
+        <div class="address-grade2">
+          <div class="grad-top clearfix">
+            <div class="top-title">热门城市:</div>
+            <ul class="hotcity clearfix">
+              <li>北京</li>
+              <li>上海</li>
+              <li>杭州</li>
+              <li>广州</li>
+              <li>天津</li>
+              <li>苏州</li>
+            </ul>
+            <div class="city-area">
+              <a href="#">东城区</a>
+              <a href="#">东城区</a>
+              <a href="#">东城区</a>
+              <a href="#">东城区</a>
+              <a href="#">石景山区</a>
+              <a href="#">东城区</a>
+              <a href="#">东城区</a>
+              <a href="#">东城区</a>
+              <a href="#">石景山区</a>
+              <a href="#">东城区</a>
+              <a href="#">东城区</a>
+              <a href="#">东城区</a>
+              <a href="#">东城区</a>
+              <a href="#">石景山区</a>
+              <a href="#">东城区</a>
+              <a href="#">东城区</a>
+            </div>
+            <ul class="hotcity clearfix">
+              <li><a href="#">成都</a></li>
+              <li><a href="#">深圳</a></li>
+              <li><a href="#">南京</a></li>
+              <li><a href="#">重庆</a></li>
+              <li><a href="#">江西</a></li>
+              <li><a href="#">南昌</a></li>
+            </ul>
+          </div>
+          <div class="grad-bottom clearfix">
+            <ul class="bottom-title clearfix">
+              <li class="active">ABCDE</li>
+              <li>FGHJ</li>
+              <li>KLMNP</li>
+              <li>QRSTW</li>
+              <li>XYZ</li>
+              <div class="bottom-area clearfix">
+                <div class="area-title fl">A</div>
+                <ul class="area-name fl
+                ">
+                  <li>阿坝</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                  <li>阿拉善</li>
+                  <li>阿泰乐</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                </ul>
+                <div class="area-title fl">B</div>
+                <ul class="area-name fl
+                ">
+                  <li>阿坝</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                  <li>阿拉善</li>
+                  <li>阿泰乐</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                </ul>
+                <div class="area-title fl">C</div>
+                <ul class="area-name fl
+                ">
+                  <li>阿坝</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                  <li>阿拉善</li>
+                  <li>阿泰乐</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                </ul>
+                <div class="area-title fl">D</div>
+                <ul class="area-name fl
+                ">
+                  <li>阿坝</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                  <li>阿拉善</li>
+                  <li>阿泰乐</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                </ul>
+                <div class="area-title fl">E</div>
+                <ul class="area-name fl
+                ">
+                  <li>阿坝</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                  <li>阿拉善</li>
+                  <li>阿泰乐</li>
+                  <li>安顺</li>
+                  <li>安顺</li>
+                </ul>
+              </div>              
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="search-box fl">
+        <input type="text" placeholder="搜索天猫超市商品">
+        <button>搜索</button>
+      </div>
+      <div class="service">
+        <a href="#">①一站式服务</a>
+        <a href="#">满88元包邮</a>
+      </div>
+    </div>
+<!-- banner导航 -->
+<div class="container" style="border-bottom:1px solid black;height: 40px;">
+    <div id="headnav" class="wrapper">
+      <ul>
+        <li>所有产品分类</li>
+        <li><a href="#">首页</a></li>
+        <li>|</li>
+        <li><a href="#">企业采购</a></li>
+        <li class="shopcar">
+          <span class="iconfont icon-gouwuchekong"></span>
+          <div class="shopcar-content">
+            <ul class="content-title">
+              <li>商品</li>
+              <li>数量</li>
+              <li>价格</li>
+              <li>删除</li>
+            </ul>
+          </div>
+          <em>^</em>
+        </li>
+      </ul>
+    </div>
+</div>
+<!-- 产品介绍部分banner -->
+<div class="wrapper">
+<div id="banner">
+  <div class="banner-left fl">
+<!-- 
+    <div class="magnifier" id="magnifier1">
+      <div class="magnifier-container">
+        <div class="images-cover"><img src="./jQueryMagnifier/images/5.jpg"></div>
+        当前图片显示容器
+        <div class="move-view"></div>
+        跟随鼠标移动的盒子
+      </div>
+      <div class="magnifier-assembly">
+        按钮组
+        <div class="magnifier-line">
+          <ul class="clearfix animation03">
+            <li class="">
+              <div class="small-img">
+                <img src="./jQueryMagnifier/images/5.jpg">
+              </div>
+            </li>
+            <li class="">
+              <div class="small-img">
+                <img src="./jQueryMagnifier/images/4.jpg">
+              </div>
+            </li>
+            <li class="">
+              <div class="small-img">
+                <img src="./jQueryMagnifier/images/3.jpg">
+              </div>
+            </li>
+            <li class="">
+              <div class="small-img">
+                <img src="./jQueryMagnifier/images/3.jpg">
+              </div>
+            </li>
+            <li class="active">
+              <div class="small-img">
+                <img src="./jQueryMagnifier/images/4.jpg">
+              </div>
+            </li>
+          </ul>
+        </div>
+        缩略图
+      </div>
+      <div class="magnifier-view"><img src="./jQueryMagnifier/images/2.jpg"></div>
+      经过放大的图片显示容器
+    </div>
+    <div class="collect">
+      <a href="#" class="iconfont icon-shoucang">收藏商品</a>
+      <a href="#">举报</a>
+    </div> --> 
+  </div>
+
+
+
+  <div class="banner-right fl">
+    <div class="detail-hd">
+      <!-- <h1>维达棉韧立体美压花抽纸3层100抽6包S码纸巾餐巾纸卫生纸面巾纸</h1>
+      <p>棉韧立体美压花 亲肤无刺激 立体美压花</p> -->
+    </div>
+    <div class="price">
+       <dl class="clearfix">
+        <dt>价格</dt>
+        <dd id="price-text">
+          <!-- <em>￥</em>
+          <span>15.9</span>
+          <span class="promo-price">超市推荐</span> -->
+        </dd>
+       </dl>
+    </div>
+    <div class="freight clearfix">
+      <dl class="clearfix">
+       <dt>运费</dt>
+       <dd>
+         <span>北京 至 </span>
+         <span>东城区</span>
+         <span>东城区</span>
+         <span>满88（20kg）包邮</span>
+         <a href="#">配送规则</a> <br>
+         <span>24:00前付款，预计6月22日送达，可选送货时间</span>
+       </dd>
+      </dl>
+    </div>
+    <div class="weight">
+      <dl class="clearfix">
+        <dt>重量</dt>
+      </dl>
+    </div>
+    <div class="monthsale">
+      <dl class="clearfix">
+        <dd>
+          <p>月销量<span style="color: red;">20万+</span></p> <em>|</em>
+          <p>送天猫积分<span style="color: green;">1</span></p>
+        </dd>
+      </dl>
+    </div>
+    <div class="quantity">
+      <dl class="clearfix">
+        <dt>数量</dt>
+        <div class="fl">
+          <div class="clearfix">
+            <input class="sum fl" type="number" id="num" value="1" min="1" max="99">
+            <!-- <div class="sum fl">1</div> -->
+            <div class="caculate fl">
+              <div class="add">+</div>
+              <div class="sub">-</div>
+            </div>
+            <span>件 有货</span>
+          </div>
+          <input class="addtoshopcar" type="button" id="additem" value="加入购物车">
+          <!-- <div class="addtoshopcar">加入购物车</div> -->
+        </div>
+      </dl>
+    </div>
+    <div class="sendscale">
+      <dl class="clearfix">
+        <dt>配送范围</dt>
+        <span>送货范围仅限舟山、嘉兴、台州、衢州、温州、宁波</span><br><span>、金华、绍兴、杭州、丽水、湖州地区(生鲜类别仅限部分地区)</span>
+      </dl>
+    </div>
+    <div class="payway">支付方式</div>
+  </div>
+</div>
+</div>
+<!-- 主体介绍部分 -->
+<div id="main" class="wrapper">
+  <!-- 轮播图 -->
+  <ul class="main-hd">
+    <li class="active">商品详情</li>
+    <li>累计评价</li>
+    <li>售后服务</li>
+    <div class="scroll-box">
+      <div class="swiper mySwiper">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide"><img src="./img/10011.webp" alt=""></div>
+            <div class="swiper-slide"><img src="./img/10012.jpg" alt=""></div>
+            <div class="swiper-slide"><img src="./img/10013.webp" alt=""></div>
+        </div>
+        <div class="swiper-pagination"></div>
+      </div>
+    </div>
+  </ul>
+  <!-- 主题图 -->
+  <div class="main-picture">
+    <!-- <a href="#">
+      <img src="./img/details-img/brand-01.gif" alt="">
+      <img src="./img/details-img/brand-02.jpg" alt="">
+    </a> -->
+    <!-- <img src="./img/b-m-1.jpg" alt="">
+    <img src="./img/b-m-2.jpg" alt="">
+    <img src="./img/b-m-3.jpg" alt="">
+    <img src="./img/b-m-4.jpg" alt="">
+    <img src="./img/details-img/brand-08.jpg" alt="">
+    <img src="./img/details-img/brand-09.jpg" alt="">
+    <img src="./img/details-img/brand-10.jpg" alt=""> -->
+  </div>
+  <!-- 价格声明/评论/售后 -->
+  <div class="price-var">
+    <img src="./img/cccc.png" alt="">
+    <div class="comment">
+      <h4>评 &nbsp; 价</h4>
+      <div class="com-center">
+        <div class="score">
+          <img src="./img/ccccccc.png" alt="">
+        </div>
+        <div class="rate-graph">
+          <div class="graph-scroller">
+            <span>
+              111
+              <em>4.9</em>
+            </span>
+          </div>
+          <ul>
+            <li>不满意</li>
+            <li>满意</li>
+            <li>满意</li>
+            <li>满意</li>
+          </ul>
+        </div>
+      </div>
+      <div class="com-area">
+        <div>
+          <input type="radio" name="" id="">评论
+          <input type="radio" name="" id="">评论
+          <input type="radio" name="" id="">评论
+        </div>
+        <div>
+          <input type="checkbox" name="" id="">有内容
+          <div class="moren">按默认 ^
+            <div class="ch-m-s"><span>按默认<br></span><br><span>按时间</span></div>
+          </div>
+        </div>
+        <div></div>
+      </div>
+      <div class="add-com"></div>
+    </div>
+    <div><img src="./img/details-img/10-123.jpg" alt=""></div>
+  </div>
+</div>
+  <!-- 底部 -->
+  <div id="footer">
+    <div class="tmall-ensure">
+      <a href="#">
+        <div class="ensure-box">品质保障</div>
+      </a>
+      <a href="#">
+        <div class="ensure-box">七天无理由退换</div>
+      </a>
+      <a href="#">
+        <div class="ensure-box">运费险</div>
+      </a>
+      <a href="#">
+        <div class="ensure-box">帮助中心</div>
+      </a>
+    </div>
+    <div class="tmall-desc">
+      <dl>
+        <dt>购物指南</dt>
+        <dd><a href="#">免费注册</a></dd>
+        <dd><a href="#">免费注册</a></dd>
+        <dd><a href="#">免费注册</a></dd>
+      </dl>
+      <dl>
+        <dt>购物指南</dt>
+        <dd><a href="#">免费注册</a></dd>
+        <dd><a href="#">免费注册</a></dd>
+        <dd><a href="#">免费注册</a></dd>
+      </dl>
+      <dl>
+        <dt>购物指南</dt>
+        <dd><a href="#">免费注册</a></dd>
+        <dd><a href="#">免费注册</a></dd>
+        <dd><a href="#">免费注册</a></dd>
+      </dl>
+      <dl>
+        <dt>购物指南</dt>
+        <dd><a href="#">免费注册</a></dd>
+        <dd><a href="#">免费注册</a></dd>
+        <dd><a href="#">免费注册</a></dd>
+      </dl>
+      <dl>
+        <dt>购物指南</dt>
+        <dd><a href="#">免费注册</a></dd>
+        <dd><a href="#">免费注册</a></dd>
+        <dd><a href="#">免费注册</a></dd>
+      </dl>
+      <dl class="tianmao-phone">
+        <dt>手机天猫</dt>
+        <img src="./img/10090.png" alt="" />
+      </dl>
+    </div>
+    <div class="tmall-copyright">
+      <div class="text">
+        <a href="#">关于天猫</a> | <a href="#">关于天猫</a> |
+        <a href="#">关于天猫</a> | <a href="#">关于天猫</a> |
+        <a href="#">关于天猫</a> | <a href="#">关于天猫</a> |
+        <a href="#">关于天猫</a> | <a href="#">关于天猫</a><br>
+        <a href="#">关于天猫</a> | <a href="#">关于天猫</a> |
+        <a href="#">关于天猫</a> | <a href="#">关于天猫</a> |
+        <a href="#">关于天猫</a> | <a href="#">关于天猫</a> |
+        <a href="#">关于天猫</a> | <a href="#">关于天猫</a> |
+        <a href="#">关于天猫</a> | <a href="#">关于天猫</a> |
+        <a href="#">关于天猫</a> | <a href="#">关于天猫</a> |
+        <br>
+        <div class="picture">
+          <a href="#"><img src="./img/10084.jpg" alt=""></a>
+          <a href="#"><img src="./img/10084.jpg" alt=""></a>
+          <a href="#"><img src="./img/10084.jpg" alt=""></a>
+          <a href="#"><img src="./img/10084.jpg" alt=""></a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+
+
+<script src="./jQueryMagnifier/js/jquery-1.11.3.min.js"></script>
+<script src="./jQueryMagnifier/js/magnifier.js"></script>
+<script src="./swiper/swiper-bundle.min.js"></script>
+
+<!-- 轮播图 -->
+<script>
+  var swiper = new Swiper(".mySwiper", {
+    pagination: {
+      el: ".swiper-pagination",
+      clickable: true,
+      direction:'vertical',
+      speed: 600,
+      loop:true,
+      autoplay:true,
+      renderBullet: function (index, className) {
+        return '<span class="' + className + '">' + (index + 1) + "</span>";
+      },
+    },
+  });
+</script>
+
+<script src="./js/jquery.min.js"></script>
+<script src="./js/detail.js" type="module"></script>
+
+
+</html>

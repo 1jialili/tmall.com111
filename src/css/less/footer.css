@@ -1,0 +1,84 @@
+@charset "UTF-8";
+#footer {
+  width: 100%;
+}
+#footer .tmall-ensure {
+  width: 1190px;
+  height: 100px;
+  margin: 0 auto;
+  border-bottom: 1px solid #999;
+}
+#footer .tmall-ensure > a {
+  font-size: 20px;
+  color: black;
+}
+#footer .tmall-ensure .ensure-box {
+  float: left;
+  width: 20%;
+  height: 100%;
+  line-height: 100px;
+  text-align: center;
+}
+#footer .tmall-desc {
+  width: 1190px;
+  padding-top: 22px;
+  height: 190px;
+  margin: auto;
+  border-top: 1px solid #ededed;
+}
+#footer .tmall-desc dl {
+  float: left;
+  padding: 0 0 0 50px;
+  width: 186px;
+}
+#footer .tmall-desc dl dt {
+  color: #646464;
+  font-size: 16px;
+  font-weight: 700;
+  height: 30px;
+  line-height: 30px;
+  text-align: left;
+}
+#footer .tmall-desc dl dd {
+  text-align: left;
+}
+#footer .tmall-desc dl dd a {
+  display: block;
+  width: 100px;
+  overflow: hidden;
+  text-align: left;
+  height: 20px;
+  line-height: 20px;
+  color: #8b8b8b;
+  font-size: 12px;
+  cursor: pointer;
+}
+#footer .tmall-desc .tianmao-phone > img {
+  display: block;
+  width: 100px;
+  height: 100px;
+  background-color: #000;
+}
+.tmall-copyright {
+  border-top: 2px solid #ff0036;
+  background: #000;
+  text-align: left;
+  min-height: 177px;
+}
+.tmall-copyright .text {
+  width: 1190px;
+  margin: 0 auto;
+  padding-top: 10px;
+  line-height: 30px;
+}
+.tmall-copyright .text a {
+  color: #fff;
+  font-size: 12px;
+}
+.tmall-copyright .picture {
+  width: 1190px;
+}
+.tmall-copyright .picture a {
+  width: 25%;
+  margin-right: 50px;
+}

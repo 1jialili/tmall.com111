@@ -1,0 +1,188 @@
+@charset "UTF-8";
+#head {
+  padding-top: 10px;
+  height: 75px;
+  .login-head {
+    width: 1200px;
+    margin: 0 auto;
+    a {
+      display: block;
+      width: 186px;
+      height: 26px;
+      img {
+        height: 100%;
+      }
+    }
+  }
+}
+select,
+option {
+  border: none;
+}
+// 主体部分
+#login-body {
+  position: relative;
+  height: 600px;
+  width: 100%;
+  background-color: blue;
+  background: url(https://gw.alicdn.com/imgextra/i3/O1CN01iyYdem1GQd1yGgA0a_!!6000000000617-0-tps-2500-600.jpg)
+    no-repeat center;
+  .login-box {
+    position: absolute;
+    top: 120px;
+    right: 150px;
+    padding: 20px;
+    width: 350px;
+    height: 380px;
+    background-color: rgba(246, 239, 251, 0.8);
+    .login-switch-tab {
+      height: 40px;
+      line-height: 40px;
+      padding-top: 15px;
+      // background-color: #f40;
+      .scancode {
+        position: absolute;
+        top: 0;
+        right: 50px;
+        width: 120px;
+        height: 30px;
+        font-size: 13px;
+        border: 1px solid orangered;
+        color: orangered;
+        text-align: center;
+        line-height: 30px;
+      }
+      > ul > li {
+        float: left;
+        height: 18px;
+        line-height: 5px;
+        font-size: 16px;
+        color: #3c3c3c;
+        font-weight: 700;
+        padding-bottom: 5px;
+        margin-right: 20px;
+        cursor: pointer;
+      }
+      .active {
+        border-bottom: 2px solid black;
+      }
+    }
+    .hide-box {
+      width: 310px;
+      height: 30px;
+      line-height: 30px;
+      text-indent: 1em;
+      font-size: 14px;
+      background-color: rgb(246, 227, 230);
+      margin-bottom: 20px;
+    }
+    .login-form {
+      .fm-box {
+        font-size: 14px;
+        position: relative;
+        margin-bottom: 20px;
+        border: 1px solid #ccc;
+        .fm-lable-icon {
+          width: 40px;
+          height: 40px;
+          line-height: 40px;
+          text-align: center;
+          color: #fff;
+          float: left;
+          // position: absolute;
+          // left: 0px;
+          // top: 1px;
+          background-color: #ccc;
+          .iconfont {
+            font-size: 24px;
+          }
+        }
+        .fm-text {
+          width: 267px;
+          height: 40px;
+          outline: none;
+          font-size: 14px;
+          text-indent: 1em;
+        }
+      }
+      .fm-btn {
+        margin-bottom: 20px;
+        .fm-button {
+          background: #f40;
+          border-color: #f40;
+          font-size: 16px;
+          border: 1px solid #ff9000;
+          border-radius: 3px;
+          height: 42px;
+          line-height: 42px;
+          outline: none;
+          color: #fff;
+          width: 100%;
+          cursor: pointer;
+        }
+      }
+      .login-links a {
+        font-size: 12px;
+        color: #6c6c6c;
+        display: inline-block;
+      }
+      .login-blocks {
+        text-align: right;
+        margin-top: 10px;
+      }
+    }
+    .message-login {
+      position: absolute;
+      width: 350px;
+      height: 290px;
+      padding: 0 20px;
+      top: 60px;
+      left: 0;
+      background-color: rgba(246, 239, 251, 0.8);
+      display: none;
+      .phone-area {
+        select {
+          display: block;
+          width: 47px;
+          height: 40px;
+          border: none;
+          outline: 0;
+        }
+      }
+      .username-input {
+        .phone-box {
+          width: 221px;
+          float: right;
+        }
+      }
+    }
+  }
+}
+// 测试用
+// #login-body:hover {
+//   .message-login {
+//     display: block;
+//   }
+// }
+#footer {
+  line-height: 30px;
+  height: 243px;
+  width: 1200px;
+  margin: 60px auto;
+  padding-top: 10px;
+  // background-color: black;
+  color: #999;
+  font-size: 12px;
+  .footer-hd {
+    p:nth-child(1) {
+      line-height: 30px;
+      border-bottom: 1px solid #6c6c6c;
+      border-top: 1px solid #6c6c6c;
+    }
+    a {
+      font-size: 12px;
+      color: #6c6c6c;
+      padding: 0 5px;
+    }
+  }
+}

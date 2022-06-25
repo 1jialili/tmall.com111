@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/base.css" />
+    <link rel="stylesheet" href="./css/less/login.css" />
+  </head>
+  <body>
+    <!-- 头部 -->
+    <div id="head">
+      <h1 class="login-head">
+        <a href="#"
+          ><img
+            id="J_TBLogo"
+            src="https://assets.alicdn.com/g/tm/login/3.0.2/img/logo.png"
+            alt="天猫 tmall.com - 阿里巴巴旗下网站"
+        /></a>
+      </h1>
+    </div>
+    <!-- 主题背景部分 -->
+    <div id="login-body">
+      <div class="login-box">
+        <div class="login-switch-tab">
+          <div class="scancode">扫码登陆更安全</div>
+          <!-- 密码登录 短信登陆 -->
+          <ul>
+            <li class="active">密码登陆</li>
+            <li>短信登陆</li>
+          </ul>
+          <!-- <a href="javascript:void(0)" class="active">密码登陆</a>
+          <a href="javascript:void(0)">短信登陆</a> -->
+        </div>
+        <!-- 隐藏盒子，当输入不符合是显现 -->
+        <div class="hide-box">账号密码不正确，请重新输入</div>
+      <!-- 密码登陆盒子 -->
+        <form class=" pass-login login-form">
+          <div class="fm-box">
+            <div>
+              <label for="" class="fm-lable-icon">
+                <i class="iconfont" tytle="用户名">22</i>
+              </label>
+            </div>
+            <div class="username-input">
+              <input name="fm_login_id" type="text" class="fm-text" id="fm-login-id" aria-label="账号名/邮箱/手机号" placeholder="账号名/邮箱/手机号" autocapitalize="off">
+            </div>
+          </div>
+          <div class="fm-box">
+            <div>
+              <label for="" class="fm-lable-icon">
+                <i class="iconfont" tytle="用户名">22</i>
+              </label>
+            </div>
+            <div class="username-input">
+              <input name="fm_login_psw" type="text" class="fm-text" id="fm-login-id" aria-label="账号名/邮箱/手机号" placeholder="请输入登陆密码" autocapitalize="off">
+            </div>
+          </div>
+          <div class="fm-btn">
+            <button disabled type="submit" class="fm-button fm-submit password-login">登录</button>
+          </div>
+          <div class="login-links">
+            <a href="javescript:void(0)" target="_self" class="weibo-login"><i class="iconfont"></i>微博登录</a>
+            <a href="javescript:void(0)" target="_self" class="alipay-login"><i class="iconfont"></i>支付宝登录</a>
+          </div>
+          <div class="login-links login-blocks">
+            <a href="javescript:void(0)" target="_blank" class="forgot-password-a-link">忘记密码</a>
+            <a href="javescript:void(0)" target="_blank" class="forgot-username-a-link">忘记账号名</a>
+            <a href="javescript:void(0)" target="_blank" class="register-a-link">免费注册</a>
+          </div>
+        </form> 
+       <!-- 短信登陆盒子 -->
+       <form class=" message-login login-form">
+         <!-- 隐藏盒子，当输入不符合是显现 -->
+         <div class="hide-box">手机号码格式不正确，请重新输入</div>
+        <div class="fm-box clearfix">
+          <div>
+            <label for="" class="fm-lable-icon fl">
+              <i class="iconfont" tytle="用户名">11</i>
+            </label>
+          </div>
+          <div class="phone-area fl">
+              <select name="" id="">
+                <option value="">+86 中国大陆</option>
+                <option value="">+852 中国香港</option>
+                <option value="">+852 中国澳门</option>
+                <option value="">+886 中国台湾</option>
+                <option value="">+82 韩国</option>
+                <option value="">+81 日本</option>
+                <option value="">+1 美国</option>
+                <option value="">+1 加拿大</option>
+              </select>
+          </div>
+          <div class="username-input fr">
+            <input name="fm-login-id" type="text" class="fm-text phone-box" id="fm-login-id" aria-label="账号名/邮箱/手机号" placeholder="请输入手机号" autocapitalize="off">
+          </div>
+        </div>
+        <div class="fm-box">
+          <div>
+            <label for="" class="fm-lable-icon">
+              <i class="iconfont" tytle="用户名">11</i>
+            </label>
+          </div>
+          <div class="username-input">
+            <input name="fm-login-id" type="text" class="fm-text" id="fm-login-id" aria-label="账号名/邮箱/手机号" placeholder="请输入验证码" autocapitalize="off">
+          </div>
+        </div>
+        <div class="fm-btn">
+          <button type="submit" class="fm-button fm-submit password-login">登录</button>
+        </div>
+        <div class="login-links">
+          <a href="javescript:void(0)" target="_self" class="weibo-login"><i class="iconfont"></i>微博登录</a>
+          <a href="javescript:void(0)" target="_self" class="alipay-login"><i class="iconfont"></i>支付宝登录</a>
+        </div>
+        <div class="login-links login-blocks">
+          <a href="javescript:void(0)" target="_blank" class="register-a-link">免费注册</a>
+        </div>
+      </form>
+      </div>
+    </div>
+    <!-- <footer id="footer">
+      <div class="footer-hd">
+        <p>
+          <a href="javascipt:void(0)">阿里巴巴集团</a> | <a href="javascipt:void(0)">阿里巴巴集团</a> | <a href="javascipt:void(0)">阿里巴巴集团</a> | <a href="javascipt:void(0)">阿里巴巴集团</a> |<a href="javascipt:void(0)">阿里巴巴集团</a> | <a href="javascipt:void(0)">阿里巴巴集团</a> | <a href="javascipt:void(0)">阿里巴巴集团</a> | <a href="javascipt:void(0)">阿里巴巴集团</a> | <a href="javascipt:void(0)">阿里巴巴集团</a> |<a href="javascipt:void(0)">阿里巴巴集团</a>
+        </p>
+        <p>
+          <span><a href="javascipt:void(0)" rel="noopener noreferrer">关于淘宝</a></span><span><a href="javascipt:void(0)" rel="noopener noreferrer">合作伙伴</a></span><span><a href="javascipt:void(0)" rel="noopener noreferrer">营销中心</a></span><span><a href="javascipt:void(0)" rel="noopener noreferrer">廉正举报</a></span><span><a href="javascipt:void(0)" rel="noopener noreferrer">联系客服</a></span><span><a href="javascipt:void(0)" rel="noopener noreferrer">开放平台</a></span><span><a href="javascipt:void(0)" rel="noopener noreferrer">诚征英才</a></span><span><a href="javascipt:void(0)" rel="noopener noreferrer">联系我们</a></span><span><a href="javascipt:void(0)" rel="noopener noreferrer">网站地图</a></span><span><a href="javascipt:void(0)" rel="noopener noreferrer">隐私权政策</a></span><span><a href="javascipt:void(0)" rel="noopener noreferrer">法律声明</a></span><span><a href="javascipt:void(0)">知识产权</a></span>
+          <b>|</b> <em>© 2003-现在 Taobao.com 版权所有</em>
+      </p>
+      <p><span><a href="javascipt:void(0)">增值电信业务经营许可证：浙B2-20080224</a></span><b>|</b><span><a href="javascipt:void(0)" rel="noopener noreferrer">增值电信业务经营许可证（跨地区）： B2-20150210</a></span><b>|</b><span><a href="javascipt:void(0)" rel="noopener noreferrer">浙网文（2019）1033-086号</a></span><b>|</b><span>浙江省网络食品销售第三方平台提供者备案：浙网食A33010001</span></p>
+      <p><span>互联网药品信息服务资格证书（浙）-经营性-2018-0010</span><b>|</b><span>短消息类服务接入代码使用证书：号【2016】00154-A01</span><b>|</b><span>信息网络传播视听许可证：1109364号</span><b>|</b><span>出版物网络交易平台服务经营备案号：新出发浙备字第002号</span></p>
+      <div class="footer-ft" style="font-size:40px;">
+        <a target="_blank" href="javascipt:void(0)" style="margin-left:15px; display:inline-block; background-position:0px 0px; width:36px; height:40px;  background-image: url(http://img.alicdn.com/tps/i1/T1FeW3XXNfXXXXXXXX-36-36.gif);">
+        </a>
+        <a target="_blank" href="javascipt:void(0)" class="tb-footer-mod" rel="noopener noreferrer" style="margin-left:15px; display:inline-block; height: 40px; background-position:0px 0px; width:30px; background-image: url(https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg);">
+        </a>
+        <a target="_blank" href="javascipt:void(0)" class="tb-footer-mod" rel="noopener noreferrer" style="background-position:-40px 0px; width:33px; margin-left:15px; display:inline-block; height: 40px; background-image: url(https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg);">
+        </a>
+        <a target="_blank" href="javascipt:void(0)" class="tb-footer-mod" rel="noopener noreferrer" style="background-position:-80px 0px; width:50px; margin-left:15px; display:inline-block; height: 40px; background-image: url(https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg);">
+        </a>
+        <a target="_blank" href="javascipt:void(0)" class="tb-footer-mod" rel="noopener noreferrer" style="background-position:-140px 0px; width:83px; margin-left:15px; display:inline-block; height: 40px; background-image: url(https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg);">
+        </a>
+        <a target="_blank" href="javascipt:void(0)" class="tb-footer-mod" rel="noopener noreferrer" style="background-position:0px -18px; width:250px; background-image: url(//img.alicdn.com/tfs/TB1N7kwRVXXXXbAapXXXXXXXXXX-500-127.png_250x250); margin-left:15px; display:inline-block; height: 40px;">
+        </a>
+        <a target="_blank" href="javascipt:void(0)" class="tb-footer-mod" rel="noopener noreferrer" style="background-position:-650px 0px; width:105px; margin-left:15px; display:inline-block; height: 40px; background-image: url(https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg);">
+        </a>
+        <a target="_blank" href="javascipt:void(0)" class="tb-footer-mod" rel="noopener noreferrer" style="background-position:-345px 0px; width:82px; margin-left:15px; display:inline-block; height: 40px; background-image: url(https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg);">
+        </a>
+        <a target="_blank" href="javascipt:void(0)" class="tb-footer-mod" rel="noopener noreferrer" style="background-position:-761px 0px; width:97px; margin-left:15px; display:inline-block; height: 40px; background-image: url(https://img.alicdn.com/tfs/TB1EPnIQXXXXXaSXpXXXXXXXXXX-1133-35.jpg);">
+        </a>
+    </div>
+      </div>
+    </footer> -->
+    
+
+  </body>
+  <script src="./js/jquery.min.js"></script>
+  <script>
+    $(function(){
+      // 登陆页面选项卡
+      $('#login-body ul li').on('click',function () {
+        let index = $(this).index();
+        $(this).addClass('active').siblings().removeClass('active');
+        console.log(index);
+        if(index==1) {
+          $('.message-login').css('display','block');
+        } else {
+          $('.message-login').css('display','none');
+        }
+      })
+    //表单未输入信息或者输入信息不完整，按钮禁止提交信息
+      let formData = {
+      fm_login_id:'',
+      fm_login_psw:'',
+    }
+    $('input').on('input',function(){
+      let username = $(this).data('fm_login_id');
+      let oldValue = formData[fm_login_id];
+      let newValue = $(this).val();
+      formData[fm_login_id] = newValue;
+      if(!(oldValue && newValue)) {
+        $('button').attr('disabled',isFormReady());
+      }
+    })
+    })
+    function isFormReady(){
+      for(let i in formData){
+        if(!formData[i]) return true;
+      }
+      return false;
+    }
+  </script>
+</html>
